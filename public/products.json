@@ -1,0 +1,50 @@
+[
+  {
+    "id": "124e13b9-2d54-4b2f-a74d-a77b362d6ead",
+    "Title": "Keep Calm and Squat On",
+    "time": 30,
+    "Age": "25-30",
+    "description": "Amet minim mollit non deserunt ullamco est sit aliqua dolor doamet sint.",
+    "img": "https://images.pexels.com/photos/1954524/pexels-photo-1954524.jpeg?cs=srgb&dl=pexels-william-choquette-1954524.jpg&fm=jpg"
+  },
+  {
+    "id": "13cbc7ed-a61b-4883-9d42-82d7d8642b86",
+    "Title": "Between a Squat and a Hard Place",
+    "time": 50,
+    "Age": "10-20",
+    "description": "The fitness industry is expanding at an ever-increasing rate. As for any",
+    "img": "https://images.pexels.com/photos/39671/physiotherapy-weight-training-dumbbell-exercise-balls-39671.jpeg?cs=srgb&dl=pexels-pixabay-39671.jpg&fm=jpg"
+  },
+  {
+    "id": "307f166f-1d04-4573-bc37-2f461ea9d4f7",
+    "Title": "Strength and Fitness Palace",
+    "time": 60,
+    "Age": "15-20",
+    "description": "The best gym name puts exactly what it is that you do out into the world",
+    "img": "https://images.pexels.com/photos/903171/pexels-photo-903171.jpeg?cs=srgb&dl=pexels-andrea-piacquadio-903171.jpg&fm=jpg"
+  },
+  {
+    "id": "4bf9798f-63bc-4a83-b0c6-6a3b816fe922",
+    "Title": "Body Temple Health and Wellness",
+    "time": 20,
+    "Age": "50-60",
+    "description": "The first step in any creative process is effective brainstorming. Know",
+    "img": "https://images.pexels.com/photos/3757374/pexels-photo-3757374.jpeg?cs=srgb&dl=pexels-andrea-piacquadio-3757374.jpg&fm=jpg"
+  },
+  {
+    "id": "9496d72b-04ec-41f8-9bc3-0a7c9697be8e",
+    "Title": "Hero Fitness and Strength Club",
+    "time": 10,
+    "Age": "20-25",
+    "description": "As your gym continues to grow, there are many more positions you can",
+    "img": "https://images.pexels.com/photos/3253501/pexels-photo-3253501.jpeg?cs=srgb&dl=pexels-cesar-gale%C3%A3o-3253501.jpg&fm=jpg"
+  },
+  {
+    "id": "6e5593d3-557b-43cf-8dab-a5140faedfb0",
+    "Title": "The Strength and Fitness Camp",
+    "time": 35,
+    "Age": "36-40",
+    "description": "A gym is a large room, usually containing special equipment, where people",
+    "img": "https://images.pexels.com/photos/371049/pexels-photo-371049.jpeg?cs=srgb&dl=pexels-li-sun-371049.jpg&fm=jpg"
+  }
+]

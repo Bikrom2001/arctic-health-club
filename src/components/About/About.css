@@ -1,0 +1,26 @@
+.about-container{
+    background-color: white;
+    padding: 20px;
+}
+.name{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+.location{
+    font-size: 15px;
+    color: gray;
+}
+.weight{
+    background-color: #F2F4FA;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+}
+.man-img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+}
