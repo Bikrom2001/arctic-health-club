@@ -12,7 +12,7 @@ const Exercise = (props) => {
                     <h5 className="card-title">{Title}</h5>
                     <p className="card-text">{description}</p>
                     <p className="card-text">For Age : {Age}</p>
-                    <p className="card-text">Time required : {time}S</p>
+                    <p className="card-text">Time required : {time}s</p>
                     <button className='btn btn-primary w-100'>Add to list</button>
                 </div>
             </div>
