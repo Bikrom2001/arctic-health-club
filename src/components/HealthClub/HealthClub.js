@@ -7,8 +7,8 @@ import './HealthClub.css';
 const HealthClub = () => {
 
     const [items, setItems] = useState([]);
-    const[cart, setCart] = useState([]);
-    const[time, setTime] = useState(0);
+    const [cart, setCart] = useState([]);
+    const [time, setTime] = useState(0);
 
 
     useEffect(() => {
@@ -17,14 +17,22 @@ const HealthClub = () => {
             .then(data => setItems(data))
     }, []);
 
-    function handleAddToCart(selectedItems){
+    function handleAddToCart(selectedItems) {
         const newCart = [...cart, selectedItems];
         setCart(newCart);
     }
 
-    function clickTimers(breakTimers){
+    function clickTimers(breakTimers) {
         setTime(breakTimers);
+        localStorage.setItem('items', JSON.stringify(breakTimers));
     }
+    useEffect(() => {
+        const itemes = JSON.parse(localStorage.getItem('items'));
+        if(itemes){
+            localStorage.setItem('items', JSON.parse(itemes));
+        }
+        setTime(itemes);
+    }, []);
 
     return (
         <div>
@@ -40,13 +48,13 @@ const HealthClub = () => {
                                 <p className='mt-4 text-black fw-bold exercise'>Select today’s exercise</p>
                             </div>
                         </div>
-                       <div className='Club-container'>
-                       {
-                            items.map(item => <Exercise item={item} key={item.id} handleAddToCart={handleAddToCart}>
+                        <div className='Club-container'>
+                            {
+                                items.map(item => <Exercise item={item} key={item.id} handleAddToCart={handleAddToCart}>
                                 </Exercise>)
-                        }
+                            }
 
-                       </div>
+                        </div>
                     </div>
                     <div className="col-lg-3">
                         <About cart={cart} clickTimers={clickTimers} time={time}></About>
