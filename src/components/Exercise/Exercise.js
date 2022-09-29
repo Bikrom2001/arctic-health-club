@@ -3,6 +3,7 @@ import './Exercise.css';
 
 const Exercise = (props) => {
     const { Title, img, time, Age, description } = props.item;
+    const {handleAddToCart} = props ;
 
     return (
         <div>
@@ -13,7 +14,7 @@ const Exercise = (props) => {
                     <p className="card-text">{description}</p>
                     <p className="card-text">For Age : {Age}</p>
                     <p className="card-text">Time required : {time}s</p>
-                    <button className='btn btn-primary w-100'>Add to list</button>
+                    <button onClick={()=> handleAddToCart(props.item)} className='btn btn-primary w-100'>Add to list</button>
                 </div>
             </div>
         </div>

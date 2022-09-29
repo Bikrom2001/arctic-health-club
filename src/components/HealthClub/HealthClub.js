@@ -7,12 +7,24 @@ import './HealthClub.css';
 const HealthClub = () => {
 
     const [items, setItems] = useState([]);
-    console.log(items);
+    const[cart, setCart] = useState([]);
+    const[time, setTime] = useState(0);
+
+
     useEffect(() => {
         fetch('products.json')
             .then(res => res.json())
             .then(data => setItems(data))
     }, []);
+
+    function handleAddToCart(selectedItems){
+        const newCart = [...cart, selectedItems];
+        setCart(newCart);
+    }
+
+    function clickTimers(breakTimers){
+        setTime(breakTimers);
+    }
 
     return (
         <div>
@@ -30,14 +42,14 @@ const HealthClub = () => {
                         </div>
                        <div className='Club-container'>
                        {
-                            items.map(item => <Exercise item={item} key={item.id}>
+                            items.map(item => <Exercise item={item} key={item.id} handleAddToCart={handleAddToCart}>
                                 </Exercise>)
                         }
 
                        </div>
                     </div>
                     <div className="col-lg-3">
-                        <About></About>
+                        <About cart={cart} clickTimers={clickTimers} time={time}></About>
                     </div>
                 </div>
             </div>

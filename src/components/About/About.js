@@ -1,7 +1,12 @@
 import React from 'react';
 import './About.css';
 import man from '../../images/Roy.png';
-const About = () => {
+const About = ({cart,clickTimers,time}) => {
+
+    let total = 0 ;
+    for(const product of cart){
+        total = total + product.time ;
+    }
     return (
         <div>
             <div className='about-container'>
@@ -33,19 +38,19 @@ const About = () => {
                     <p className='break'>Add A Break</p>
                     <div className='time-break'>
                         <div>
-                            <button className='timers'>10s</button>
+                            <button onClick={()=>clickTimers(10)} className='timers'>10s</button>
                         </div>
                         <div>
-                            <button className='timers2'>20s</button>
+                            <button onClick={()=>clickTimers(20)} className='timers2'>20s</button>
                         </div>
                         <div>
-                            <button className='timers'>30s</button>
+                            <button onClick={()=>clickTimers(30)} className='timers'>30s</button>
                         </div>
                         <div>
-                            <button className='timers'>40s</button>
+                            <button onClick={()=>clickTimers(40)} className='timers'>40s</button>
                         </div>
                         <div>
-                            <button className='timers'>50s</button>
+                            <button onClick={()=>clickTimers(50)} className='timers'>50s</button>
                         </div>
                     </div>
                 </div>
@@ -54,11 +59,11 @@ const About = () => {
                 <p className='break'>Exercise Details</p>
                 <div className='exercise-time mb-3'>
                     <p className='mb-0 fw-bold'>Exercise time</p>
-                    <p className='mb-0 seconds'>200 seconds</p>
+                    <p className='mb-0 seconds'>{total} seconds</p>
                 </div>
                 <div className='exercise-time mb-5'>
                     <p className='mb-0 fw-bold'>Break time</p>
-                    <p className='mb-0 seconds'>15 seconds</p>
+                    <p className='mb-0 seconds'>{time} seconds</p>
                 </div>
                 <button className='btn btn-primary w-100'>Activity Completed</button>
                 </div>
