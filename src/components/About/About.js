@@ -7,7 +7,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const About = ({ cart, clickTimers, time }) => {
 
-    const notify = () => toast("Wow so easy!",{theme:"dark",type:"success"});
+    const notify = () => toast("Wow Activity Completed!",{theme:"dark",type:"success"});
 
     let total = 0;
     for (const product of cart) {
@@ -19,7 +19,7 @@ const About = ({ cart, clickTimers, time }) => {
                 <div className='pt-4 d-flex align-items-center gap-3'>
                     <img className='img-fluid man-img' src={man} alt="" />
                     <div>
-                        <h2 className='name'>Zahid Hossain</h2>
+                        <h2 className='name text-uppercase'>Bikrom Roy</h2>
                         <p className='location mb-0'>Sydney, Australia</p>
                     </div>
                 </div>
@@ -30,11 +30,11 @@ const About = ({ cart, clickTimers, time }) => {
                             <p className='mb-0 weight-ds'>Weight</p>
                         </div>
                         <div>
-                            <span className='d-block text-center fw-bold fs-5'>6.5</span>
+                            <span className='d-block text-center fw-bold fs-5'>6.6</span>
                             <p className='mb-0 weight-ds'>Height</p>
                         </div>
                         <div>
-                            <span className='d-block fw-bold fs-5'>25 <sub>yrs</sub></span>
+                            <span className='d-block fw-bold fs-5'>21 <sub>yrs</sub></span>
                             <p className='mb-0 weight-ds'>Age</p>
                         </div>
                     </div>
